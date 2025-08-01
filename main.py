@@ -13,7 +13,7 @@ opt = parser.parse_args()
 img = jetson_utils.loadImage(opt.filename)
 net = jetson_inference.imageNet(
     opt.network,
-    model="./resent18.onnx",
+    model="./resnet18.onnx",
     labels="./dataset/labels.txt",
     input_blob="input_0",
     output_blob="output_0",
